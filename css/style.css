@@ -1,0 +1,177 @@
+:root {
+    /* fonts */
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    /* ### Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    /* ### Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-color: var(--Pale-blue);
+}
+
+.card {
+    width: 90%;
+    height: max-content;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+}
+
+.top__card {
+    width: 100%;
+}
+
+.cover__card {
+    width: 100%;
+    height: 12em;
+    background-image: url('../images/illustration-hero.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin: 0;
+    border-radius: 1em 1em 0 0;
+}
+
+.body__card {
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+.body__text {
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    color: var(--Desaturated-blue);
+    padding: 0 3em;
+}
+
+.offer {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    border-radius: 1em;
+    padding: 1em 0;
+}
+
+.music__icon {
+    margin: auto 0;
+    margin-left: 1em;
+}
+
+.plan {
+    margin: auto 0;
+    margin-left: 1em;
+}
+
+.suggested__plan {
+    font-size: .9rem;
+    font-weight: 900;
+    margin: auto 0;
+    margin-bottom: 0;
+}
+
+.cost__plan {
+    margin: auto 0;
+    margin-top: 0;
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.offer__option {
+    font-weight: 700;
+    font-size: .85rem;
+    margin: auto;
+    margin-right: 1em;
+}
+
+.offer__option:hover {
+    cursor: pointer;
+    color: hsl(245, 64%, 65%);
+    text-decoration: none;
+}
+
+.buttons {
+    width: 85%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn__payment {
+    font-size: .9rem;
+    font-weight: 700;
+    width: 100%;
+    height: 3em;
+    background-color: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border: none;
+    border-radius: .5em;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn__payment:hover {
+    cursor: pointer;
+    background-color: hsl(245, 64%, 65%);
+    box-shadow: 0px 5px 20px hsla(245, 64%, 45%, 0.309);
+}
+
+.btn__cancel {
+    font-size: .9rem;
+    font-weight: 700;
+    width: 100%;
+    height: 3em;
+    background-color: var(--very-Pale-blue);
+    color: var(--Desaturated-blue);
+    border: none;
+    margin-top: 1em;
+}
+
+.btn__cancel:hover {
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+
+.attribution {
+    font-size: .8rem;
+    text-align: center;
+    margin: 1em auto;
+}
+
+.attribution a {
+    color: var(--Dark-blue);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+     :root {
+        font-size: 12px;
+    }
+    .card {
+        width: 250px;
+        margin: auto;
+    }
+}
